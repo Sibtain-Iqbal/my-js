@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+    <style>
+        img{
+            width: 200px;
+           
+        }
+    </style>
+</head>
+<body style=" background-color: #414141;">
+
+    <h2>images amazing </h2>
+
+    <div>
+
+        <ul id="images">
+
+            <li><img id="Girl" src="https://media.istockphoto.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=1024x1024&w=is&k=20&c=8OiGJDGnvfIMbKUz4zrs4HWEBuMsguEHU4j7vuohX3c=" alt=""></li>
+
+            <li><img id="program1" src="https://media.istockphoto.com/id/1294521676/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?s=1024x1024&w=is&k=20&c=youRva8itsJNkxQ0FWjN-tr61933yRKJActkznQXcA8=" alt=""></li>
+
+
+            <li><img id="group" src="https://media.istockphoto.com/id/940143958/photo/they-talk-the-talk-and-code-the-code.jpg?s=1024x1024&w=is&k=20&c=z5yyyy_2AIXvXctC8s14la46YjjKkrULdF-8QZ_lcJ8=" alt=""></li>
+
+            <li><img id="japan" src="https://media.istockphoto.com/id/1390815938/photo/tokyo-city-in-japan.webp?b=1&s=170667a&w=0&k=20&c=YVI8iGWf-w_cLyQNcWA57Ll9eXv_s_SHfoM0MufEMMQ=" alt=""></li>
+            
+        
+        </ul>
+    </div>
+
+
+
+
+
+    <script>
+
+document.querySelector('#Girl').addEventListener('click' ,function(e){
+// alert('helllo')
+console.log('click girl');
+e.stopPropagation()
+})
+
+//types ,timestamp ,deafultprevnt , target , srcelement , toElemnt cleintX , cleintY , ScreenX , screen Y,
+//altkey ,ctrlkey , shiftkey ,keycocde 
+
+
+  document.getElementById('images').addEventListener('click' , function(e){
+    // alert('click inside girl')
+    console.log('click outside');
+
+})
+
+const image = document.querySelector('#images')
+
+image.addEventListener('click',function(e){
+
+    console.log(e.target);
+
+    console.log(e.target.parentNode);
+
+})
+
+
+
+    </script>
+    
+</body>
+</html>

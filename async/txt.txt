@@ -1,0 +1,40 @@
+javascript((
+
+ synchoronas{
+ excute code line by line 
+
+ 
+ }
+ 
+ single thread code{
+
+    all code excute in single thread
+ }
+
+)
+
+EXICUTION Context{
+
+    excute one line code at time 
+
+(
+    console . log (1)
+    console.log(2)
+
+each operartion wait for the last one  to complete before code 
+  before the other line code its doesnit exist
+)
+}
+
+
+
+
+Async code 
+
+
+
+/////////////////////
+
+
+
+blocking code vs non blockiing code 

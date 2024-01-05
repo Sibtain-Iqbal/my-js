@@ -1,0 +1,49 @@
+
+body{
+   margin: 0;
+   padding: 0;
+
+   box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.button{
+width: 100px;
+height: 100px;
+ background: #000;
+
+}
+#gray{
+    background-color: gray;
+}
+#blue{
+    background-color: blue;
+
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+
+.container1 h1{
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+body{
+    background-color: gray;
+}
+label{
+    font-size: 30px;
+}
+input{
+   padding: 10px 30px;
+   margin-left: 40px;
+}

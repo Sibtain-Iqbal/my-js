@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:#212121 ;
+            font-size: 20px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="aprent">
+        <div class="days">monday</div>
+        <div class="days">tuesday</div>
+        <div class="days">wednesday</div>
+        <div class="days">thursday</div>
+        <div class="days">friday</div>
+        <div class="days">saturday</div>
+        <div class="days">sunday</div>
+    </div>
+</body>
+
+<script>
+
+   const parent = document.querySelector('.aprent')
+//    console.log(parent);
+//    console.log(parent.children[2].innerHTML);
+
+
+//    for (let i = 0; i < parent.children.length; i++) {
+//    console.log(parent.children[i].innerHTML);}
+   parent.children[0].style.color = 'red'
+   parent.children[2].style.backgroundColor = 'orange'
+  
+   console.log(parent.lastElementChild.style.color ='blue')
+//    parent.aprent.style.color = 'blue'
+
+// const mystyle = document.getElementsByClassName('.aprent')
+// mystyle.style.color = 'blue'
+    
+   
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>second file of html</h2>
+
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+    <script>
+     
+
+      let clearvalid;
+
+      const declare = () => {
+        console.log("this is run ", Date.now());
+      };
+
+      document.querySelector("#start").addEventListener("click", function () {
+        clearvalid = setInterval(declare, 1000);
+        console.log("start");
+      });
+      document.querySelector("#stop").addEventListener("click", function () {
+        clearInterval(clearvalid);
+        console.log("stop");
+      });
+
+
+
+      
+    </script>
+  </body>
+</html>
